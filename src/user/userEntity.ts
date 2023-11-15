@@ -6,7 +6,7 @@ export class User{
         public nameAndSurname: string,
         public email: string,
         public userPhoto: string,
-        public favoriteRecords: [],
+        public favoriteRecords: string[],
         public userId = crypto.randomUUID()
     ){}
 }

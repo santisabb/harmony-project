@@ -1,0 +1,28 @@
+###show all users
+GET http://localhost:8080/api/users
+###show one user by id
+GET http://localhost:8080/api/users/a02b91bc-3769-4221-beb1-d7a3aeba7dad
+###create a user
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "userName": "duko",
+    "nameAndSurname": "Mauro Lombardo",
+    "email": "dukissj@gmail.com",
+    "userPhoto": "link a img",
+    "favoriteRecords": [
+    "Temperoda de Reggeaton Vol.1",
+    "Desde El Fin Del Mundo",
+    "Antes de Ameri"
+    ]
+}
+###modify a user by PATCH method
+PATCH http://localhost:8080/api/users/df110eea-20ba-48ee-a9ae-fafe5fabad60
+Content-Type: application/json
+
+{
+    "userName": "dukissj"
+}
+###delete a user
+DELETE http://localhost:8080/api/users/f43f1191-0696-4bc5-b58c-061276652b78
